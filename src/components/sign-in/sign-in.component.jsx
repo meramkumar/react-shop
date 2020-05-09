@@ -3,7 +3,8 @@ import React from 'react';
 import './sign-in.style.scss';
 
 import FormInput from '../form-input/form-input.component';
-
+import FormButton from '../form-button/form-button.component';
+import {signInWithGoogle} from '../../firebase/firebase.utils';
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class SignIn extends React.Component {
                         handleChange={this.handleChange} 
                         required />
                      
-                    <input type='submit' value='Submit Form' />
+                    <FormButton type='submit'>Sign In</FormButton>
                 </form>
             </div>
         )
