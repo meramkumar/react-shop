@@ -51,38 +51,38 @@ class SignUp extends Component {
                 <h2 className='title'>I do not have account</h2>
                 <span>Sign up with your email and password</span>
                 <form onSubmit={this.handleSubmit}>
-                <FormInput
+                    <FormInput
                         name='displayName'
                         type='text'
                         label='Full Name'
                         value={displayName}
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange}
                         required />
-                      <FormInput
+                    <FormInput
                         name='email'
                         type='email'
                         label='Email'
                         value={email}
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange}
                         required />
-                      <FormInput
+                    <FormInput
                         name='password'
                         type='password'
                         label='Password'
                         value={password}
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange}
                         required />
-                      <FormInput
+                    <FormInput
                         name='confirmPassword'
                         type='password'
                         label='Confirm Password'
                         value={confirmPassword}
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange}
                         required />
-                  
+
                     <div className='button'>
                         <FormButton type='submit'>SIGN UP</FormButton>
-                       
+
                     </div>
                 </form>
             </div>
